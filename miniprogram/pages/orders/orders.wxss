@@ -1,0 +1,54 @@
+.orderCard {
+  margin-bottom: 20rpx;
+}
+
+.orderHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.badge {
+  flex: none;
+  border-radius: 999rpx;
+  padding: 8rpx 16rpx;
+  color: #ffffff;
+  font-size: 24rpx;
+  font-weight: 400;
+}
+
+.pending {
+  background: #c7832b;
+}
+
+.confirmed {
+  background: #256c68;
+}
+
+.completed {
+  background: #4b7c42;
+}
+
+.cancelled {
+  background: #8b4a42;
+}
+
+.address {
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+
+.note {
+  margin-top: 12rpx;
+  color: #697682;
+  font-size: 26rpx;
+}
+
+.emptyState {
+  color: #697682;
+  text-align: center;
+}

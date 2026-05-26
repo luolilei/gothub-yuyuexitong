@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上门美容预约后台</title>
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>预约管理</h1>
+        <p>查看小程序提交的上门美容服务预约。</p>
+      </div>
+      <form id="authForm" class="auth">
+        <input id="tokenInput" type="password" placeholder="管理员口令" autocomplete="current-password">
+        <button type="submit">进入后台</button>
+      </form>
+    </header>
+
+    <section class="stats" aria-label="预约统计">
+      <div>
+        <span id="totalCount">0</span>
+        <p>全部预约</p>
+      </div>
+      <div>
+        <span id="pendingCount">0</span>
+        <p>待确认</p>
+      </div>
+      <div>
+        <span id="todayCount">0</span>
+        <p>今日上门</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panelHead">
+        <h2>预约列表</h2>
+        <button id="refreshBtn" type="button">刷新</button>
+      </div>
+      <div id="message" class="message">请输入管理员口令后查看数据。</div>
+      <div class="tableWrap">
+        <table>
+          <thead>
+            <tr>
+              <th>客户</th>
+              <th>电话</th>
+              <th>服务</th>
+              <th>上门时间</th>
+              <th>地址</th>
+              <th>备注</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody id="appointmentRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>

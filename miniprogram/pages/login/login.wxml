@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="section">
+    <view class="title">上门美容预约</view>
+    <view class="subtitle">填写手机号和称呼后即可提交上门服务预约。</view>
+  </view>
+
+  <view class="card">
+    <view class="field">
+      <text class="label">称呼</text>
+      <input value="{{name}}" placeholder="请输入姓名或称呼" bindinput="onNameInput" />
+    </view>
+    <view class="field">
+      <text class="label">手机号</text>
+      <input value="{{phone}}" type="number" maxlength="11" placeholder="请输入手机号" bindinput="onPhoneInput" />
+    </view>
+    <view class="field">
+      <text class="label">常用地址</text>
+      <input value="{{address}}" placeholder="请输入上门地址" bindinput="onAddressInput" />
+    </view>
+    <button class="button" loading="{{loading}}" bindtap="login">登录并预约</button>
+  </view>
+</view>

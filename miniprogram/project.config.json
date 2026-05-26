@@ -1,0 +1,14 @@
+{
+  "description": "上门美容预约小程序",
+  "appid": "touristappid",
+  "projectname": "gothub-yuyuexitong",
+  "miniprogramRoot": "./",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram"
+}

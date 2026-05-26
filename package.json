@@ -1,0 +1,18 @@
+{
+  "name": "gothub-yuyuexitong",
+  "version": "1.0.0",
+  "description": "移动端上门美容预约系统，包含微信小程序、Node.js 后端、SQLite 数据库和管理员后台。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "wechat-miniprogram",
+    "booking",
+    "beauty",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT"
+}

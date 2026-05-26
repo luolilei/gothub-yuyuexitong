@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/booking/booking",
+    "pages/orders/orders"
+  ],
+  "window": {
+    "navigationBarTitleText": "上门美容预约",
+    "navigationBarBackgroundColor": "#256c68",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f7f8"
+  },
+  "tabBar": {
+    "color": "#697682",
+    "selectedColor": "#256c68",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "我的"
+      }
+    ]
+  }
+}

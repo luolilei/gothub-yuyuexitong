@@ -1,0 +1,37 @@
+<view class="page">
+  <view class="section">
+    <view class="title">预约上门美容</view>
+    <view class="subtitle">选择服务、日期和地址，提交后管理员后台会立即入库。</view>
+  </view>
+
+  <view class="card">
+    <view class="field">
+      <text class="label">服务项目</text>
+      <picker mode="selector" range="{{services}}" value="{{serviceIndex}}" bindchange="onServiceChange">
+        <view class="pickerValue">{{services[serviceIndex]}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <text class="label">预约日期</text>
+      <picker mode="date" value="{{bookingDate}}" bindchange="onDateChange">
+        <view class="pickerValue">{{bookingDate || '请选择日期'}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <text class="label">预约时间</text>
+      <picker mode="time" value="{{bookingTime}}" bindchange="onTimeChange">
+        <view class="pickerValue">{{bookingTime || '请选择时间'}}</view>
+      </picker>
+    </view>
+    <view class="field">
+      <text class="label">上门地址</text>
+      <input value="{{address}}" placeholder="请输入详细地址" bindinput="onAddressInput" />
+    </view>
+    <view class="field">
+      <text class="label">备注</text>
+      <textarea value="{{note}}" placeholder="皮肤状态、偏好或其他说明" bindinput="onNoteInput" />
+    </view>
+    <button class="button" loading="{{loading}}" bindtap="submitBooking">提交预约</button>
+    <button class="ghostButton" bindtap="goLogin">切换登录信息</button>
+  </view>
+</view>
